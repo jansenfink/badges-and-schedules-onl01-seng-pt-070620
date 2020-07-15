@@ -23,17 +23,11 @@ def assign_rooms(names)
 end  
 
 def printer(attendees) 
-  i = 0 
-  j = 0 
   attendees.each do |attendee|
-    attendees[i] = attendee
     puts "Hello, my name is #{attendee}."
-    i += 1 
   end
   
   attendees.each do |rooms|
     puts "Hello, #{rooms}! You'll be assigned to room #{j + 1}!"
-    attendees[j] = rooms
-    j += 1
   end 
 end  
